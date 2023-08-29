@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #e0e0e0;
+  }
+
+.header {
+    width: 100%;
+    height: 50px;
+    background-color:#28379d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .threeLines {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    margin-left:10px ;
+  }
+  
+  .threeLines:hover{
+    cursor: pointer;
+    background-color: red;
+    border-radius: 20px;
+    border: 1px solid red;
+  }
+  .slide {
+    position: absolute;
+    left: -200px;
+    width: 200px;
+    height: 200px;
+    background-color: gray;
+    transition: left 0.3s ease-in-out;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    padding-top: 20px;
+    box-sizing: border-box;
+  }
+  
+  .open {
+    left: 0; 
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin: 10px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: bold;
+  }
+  
+  .litag{
+    list-style-type: none;
+    margin-top: 20px;
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+  }
+
+  .litag a {
+    text-decoration: none;
+  color: white;
+  margin-left: 10px;
+  }
+
+  .litag a:hover {
+    color: black;
+    text-decoration: underline;
+  }   	
+
+  .litagSettings::before { 
+    content: "";
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    margin-left: -30px;
+    background-size: contain;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/2099/2099058.png);
+    border: 1.5px solid black;
+    border-radius: 30px;
+  }
+  .litagReports::before { 
+    content: "";
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    margin-left: -30px;
+    background-size: contain;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/1055/1055644.png);
+    border: 1.5px solid black;
+    border-radius: 30px;
+  }
+  .litagUser::before { 
+    content: "";
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    margin-left: -30px;
+    background-size: contain;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/11511/11511392.png);
+    border: 1.5px solid black;
+    border-radius: 30px;
+  }
+  h3{
+    color: white;
+    margin-right: 20px;
+  }
+  h3 a{
+  text-decoration: none;
+  color: white;
+  }
+  h3 a:hover{
+cursor: pointer;    
+color: black;
+    }
