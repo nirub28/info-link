@@ -17,7 +17,7 @@ const Header = () => {
           alt="icons"
           onClick={toggleMenu}
         />
-        <h3><a href='/'>LinkLite</a></h3>
+        <h3><a href='/'>CMF</a></h3>
       </header>
       <nav className={menuOpen ? `${styles.slide} ${styles.open}` : styles.slide}>
         <ul>

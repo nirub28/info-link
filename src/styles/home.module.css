@@ -1,10 +1,24 @@
 .home {
     padding: 20px;
+    background-color: white;
+    height: 100vh;
   }
   
+  
+  .searchDiv{
+    background-color: lightgray;
+    margin-left: 300px;
+    height: 40px;
+    position: relative;
+    margin-top: 15px;
+    border-radius: 8px;
+  }
+
   .search {
-    margin-bottom: 20px;
-    margin-left: 500px;
+    position: absolute;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 100px;
   }
   
   .table {
@@ -13,6 +27,8 @@
     background-color: lightgray;
     padding: 20px;
     border-radius: 8px;
+    height: 230px;
+    margin-top: -20px;
   }
   
   table {
@@ -29,14 +45,132 @@
   th {
     background-color: #f2f2f2;
   }
+
+  tbody tr:nth-child(odd) {
+    background-color: lightgray; 
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: rgb(192, 192, 192);
+  }
   
   .sno {
-    width: 40px; /* Adjust as needed */
+    width: 40px;
   }
   
   .pagination {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 0px;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
   }
+
+  .customPagination {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .pagination .page-item {
+    display: flex !important; 
+  justify-content: center; 
+  align-items: center; 
+  margin: 0 5px; 
+  cursor: pointer; 
+  }
+
+  .currentPage {
+    background-color: red !important;
+    color: white !important;
+  }
+ 
   
+  .dashboard{
+    width:150px;
+    height: 150px;
+    margin-left: 300px;
+    background: gray;
+    color: black;
+    border-radius: 20px;
+    border: 2px solid black;
+    display: flex;
+    justify-content:flex-start;;
+    flex-direction: column;
+    transition: transform 0.2s;
+  }
+
+  .dashboard:hover {
+    transform: scale(1.05); 
+    cursor: pointer;
+  }
+  .dis{
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  .dashboard b{
+    font-size: 5rem;
+    margin-top: -100px;
+    margin-left: 30px;
+  }
+
+  .dashboardInner{
+    width:150px;
+    height: 150px;
+    background: gray;
+    color: black;
+    border-radius: 20px;
+    border: 2px solid black;
+    transition: transform 0.2s;
+  }
+  .dashboardDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+  }
+  .dashboardInner:hover {
+    transform: scale(1.05); 
+    cursor: pointer;
+  }
+  .bTag{
+    text-align: center;
+  }
+  .centerContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; 
+  }
+  .sNo{
+    width: 50px;
+  }
+  .name{
+    width: 200px;
+  }
+  .mobile{
+    width: 185px;
+  }
+  .email{
+    width:200px;
+  }
+  .editBtn{
+    width:50px;
+    height: 20px;
+    background-color: green;
+    color: white;
+  }
+  .delBtn{
+    width:50px;
+    height: 20px;
+    background-color: red;
+    color: white;
+    margin-left: 10px;
+  }
+  .delBtn:hover{
+    color: black;
+    cursor: pointer;
+  }
+  .editBtn:hover{
+    color: black;
+    cursor: pointer;
+  }
